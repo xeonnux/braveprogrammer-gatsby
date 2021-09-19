@@ -11,7 +11,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-2xl);
+  --maxWidth-wrapper: var(--maxWidth-4xl);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -55,6 +55,7 @@
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
   --color-primary: #005b99;
+  --color-secondary: #b8b8b8;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -241,6 +242,7 @@ a:focus {
 /* Custom classes */
 
 .global-wrapper {
+  background-color: var(--color-secondary);
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
   padding: var(--spacing-10) var(--spacing-5);
@@ -288,6 +290,7 @@ a:focus {
 
 .bio {
   display: flex;
+  justify-content: space-around;
   margin-bottom: var(--spacing-16);
 }
 
@@ -298,7 +301,8 @@ a:focus {
 .bio-avatar {
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
-  min-width: 50px;
+  min-width: 100px;
+  min-height: 100px;
   border-radius: 100%;
 }
 

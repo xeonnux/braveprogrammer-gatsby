@@ -1,14 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `xeonnux.dev`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Fabrice Madré`,
+      summary: `Certified Full Stack Web Developer since September 2021.
+                Former IT and Maintenance Manager in a Restaurant, I went
+                through one of Le Wagon© Full Time Bootcamp and immediately
+                afterwards was luckily employed at WSHOP© as a Junior Front End developer.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Personal Biography and Blog site`,
+    siteUrl: `https://www.fmadre.com/`,
     social: {
-      twitter: `kylemathews`,
+      linkedin: `fabrice-madre-3365382a`,
     },
   },
   plugins: [
