@@ -290,7 +290,8 @@ a:focus {
 
 .bio {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: var(--spacing-16);
 }
 
@@ -301,8 +302,8 @@ a:focus {
 .bio-avatar {
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 200px;
+  min-height: 200px;
   border-radius: 100%;
 }
 

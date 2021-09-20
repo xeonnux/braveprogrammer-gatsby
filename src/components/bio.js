@@ -9,6 +9,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFontAwesome } from "@fortawesome/free-brands-svg-icons"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -38,8 +39,8 @@ const Bio = () => {
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/profile_fabrice.jpg"
-        width={100}
-        height={100}
+        width={200}
+        height={200}
         quality={100}
         alt="Profile picture"
       />
@@ -49,7 +50,7 @@ const Bio = () => {
           {` `}
           <br/>
           <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
-            Follow me on <FontAwesomeIcon icon={["fas", "linkedin"]} />
+            Follow me on <FontAwesomeIcon icon={["fab", "fa-font-awesome"]} />
           </a>
         </p>
       )}
