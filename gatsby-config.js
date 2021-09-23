@@ -6,15 +6,19 @@ module.exports = {
       summary: `Certified Full Stack Web Developer since September 2021.
                 Former IT and Maintenance Manager in a Restaurant, I went
                 through one of Le Wagon© Full Time Bootcamp and immediately
-                afterwards was luckily employed at WSHOP© as a Junior Front End developer.`,
+                afterwards started working as a Freelance Web Developer.`,
     },
     description: `Personal Biography and Blog site`,
     siteUrl: `https://www.fmadre.com/`,
     social: {
       linkedin: `fabrice-madre-3365382a`,
+      facebook: `xeonnux`,
+      github: `xeonnux`,
+      codepen: `xeonnux`
     },
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
