@@ -38,7 +38,7 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bg-green-800 flex justify-start max-h-screen items-center">
+    <div className="bg-gray-400 flex justify-start max-h-screen items-center">
       <div className="flex flex-col justify-start items-center my-6 w-1/2">
         <StaticImage
           className="w-40 h-40 mb-3 rounded-full"
@@ -65,17 +65,17 @@ const Bio = () => {
               Hi! I am <strong>{author.name}</strong> <br/> {author?.summary || null}
               {` `}
               <br/>
-            <div className="text-yellow-100 my-10 flex justify-evenly">
-              <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
+            <div className="my-10 flex justify-evenly">
+              <a className="text-yellow-100 hover:text-yellow-800" href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
                 <strong className="text-3xl"><FaLinkedin /></strong>
               </a>
-              <a href={`https://facebook.com/${social?.facebook || ``}`}>
+              <a className="text-yellow-100 hover:text-yellow-800" href={`https://facebook.com/${social?.facebook || ``}`}>
                 <strong className="text-3xl"><FaFacebook /></strong>
               </a>
-              <a href={`https://github.com/${social?.github || ``}`}>
+              <a className="text-yellow-100 hover:text-yellow-800" href={`https://github.com/${social?.github || ``}`}>
                 <strong className="text-3xl"><FaGithub /></strong>
               </a>
-              <a href={`https://codepen.io/${social?.codepen || ``}`}>
+              <a className="text-yellow-100 hover:text-yellow-800" href={`https://codepen.io/${social?.codepen || ``}`}>
                 <strong className="text-3xl"><FaCodepen /></strong>
               </a>
             </div>

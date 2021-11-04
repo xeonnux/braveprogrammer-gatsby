@@ -6,6 +6,8 @@ description: "How it all Started"
 
 What an Incredible adventure Start!
 
+I started off in the beginning all out of curiosity... 
+
 
 ([Wikipedia Link](https://en.wikipedia.org/wiki/Salted_duck_egg))
 

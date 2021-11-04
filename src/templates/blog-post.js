@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import { FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaCodepen, FaFacebook, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -16,31 +16,40 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-        <hr />
-        <footer>
-          <div className="socials">
-            <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
-              <strong className="social"><FaLinkedin /></strong>
-            </a>
-            <a href={`https://facebook.com/${social?.facebook || ``}`}>
-              <strong className="social"><FaFacebook /></strong>
-            </a>
-          </div>
-        </footer>
-      </article>
+      <div className="flex justify-center align-middle">
+        <article
+          className="blog-post bg-red-600 w-3/4"
+          itemScope
+          itemType="http://schema.org/Article"
+        >
+          <header>
+            <h1 itemProp="headline">{post.frontmatter.title}</h1>
+            <p>{post.frontmatter.date}</p>
+          </header>
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            itemProp="articleBody"
+          />
+          <hr />
+
+          <footer>
+            <div className="socials flex justify-evenly align-middle">
+              <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
+                <strong className="social"><FaLinkedin /></strong>
+              </a>
+              <a href={`https://facebook.com/${social?.facebook || ``}`}>
+                <strong className="social"><FaFacebook /></strong>
+              </a>
+              <a href={`https://github.com/${social?.github || ``}`}>
+                <strong className="social"><FaGithubSquare /></strong>
+              </a>
+              <a href={`https://codepen.io/${social?.codepen || ``}`}>
+                <strong className="social"><FaCodepen /></strong>
+              </a>
+            </div>
+          </footer>
+        </article>
+      </div>
       <nav className="blog-post-nav">
         <ul
           style={{
@@ -85,6 +94,8 @@ export const pageQuery = graphql`
         social {
           linkedin
           facebook
+          github
+          codepen
         }
       }
     }
