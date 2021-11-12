@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.bio {
+  background-image: url('../images/sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  width: 100vw;
+}
 
 .squiggle {
   stroke-dasharray: 600;
   stroke-dashoffset: 600;
   animation: draw 5s linear infinite;
-}
-
-.squiggle:hover {
-  animation: draw 5s linear forwards;
 }
 
 @keyframes draw {
@@ -19,18 +23,62 @@
   }
 }
 
-.squiggle2 {
-  stroke-dasharray: 950;
-  stroke-dashoffset: 950;
-  animation: draw 5s linear infinite;
+#cubes {
+  border: #cc0000 solid 2px;
+
+  width: 30vw;
+  height: 30vh;
 }
 
-@keyframes draw {
-  to {
-    stroke-dashoffset: 10;
+#name {
+  text-align: center;
+  width: 20vw;
+  height: 20vh;
+}
+
+tspan { white-space:pre }
+		.shp0 { fill: #cc0000 } 
+		.shp1 { fill: none;stroke: #ffffff;stroke-width: 42 } 
+		.shp2 { fill: none;stroke: #ffffff;stroke-width: 32 } 
+		.shp3 { fill: none;stroke: #ffffff;stroke-width: 4.4 } 
+		.shp4 { fill: #ffffff } 
+
+.slider {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#slide {
+  position: absolute;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  transition: 2s;
+  background-color: rgba(108, 169, 172, 0.4);
+}
+/* 
+.slider:hover #slide {
+  transition: 2s;
+  right: -50vw;
+} */
+
+#cubes:hover {
+  animation:spin 8s ease-out forwards;
+}
+
+#Block-right, #shade-right, #Block-left, #shade-left, #Block-top, #shade-top, #mini-white-hexagon {
+  animation:spin 8s ease-out forwards;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes spin { 
+  from {
+    transform: rotateZ(0deg);
   }
-}
-
-svg {
-  width: 10vw;
+  to {
+    transform: rotateZ(360deg);
+  }
 }

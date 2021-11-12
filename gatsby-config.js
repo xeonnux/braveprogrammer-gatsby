@@ -6,7 +6,7 @@ module.exports = {
       summary: `Certified Full Stack Web Developer since September 2021.
                 Former IT and Maintenance Manager in a Restaurant, I went
                 through one of Le Wagon© Full Time Bootcamp and immediately
-                afterwards started working as a Freelance Web Developer.`,
+                afterwards started working as a Freelance Teacher & Web Developer.`,
     },
     description: `Personal Biography and Blog site`,
     siteUrl: `https://www.fmadre.com/`,
@@ -58,12 +58,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `G-XSTM368949`,
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
