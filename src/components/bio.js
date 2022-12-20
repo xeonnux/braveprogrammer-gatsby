@@ -74,7 +74,7 @@ const Bio = () => {
             </div>
           )}
         </div>
-        <h4 className="mt-10 bg-gray-900 bg-opacity-50 px-20 rounded-md py-6 text-center text-white">Under construction. Great Surprises coming soon!</h4>
+{/*<h4 className="mt-10 bg-gray-900 bg-opacity-50 px-20 rounded-md py-6 text-center text-white">Under construction. Great Surprises coming soon!</h4>*/}
       </div>
     </div>
   )
