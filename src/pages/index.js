@@ -28,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
-      <div className="flex flex-col justify-center items-center bg-gray-400">
+      {/* <div className="flex flex-col justify-center items-center bg-gray-400">
         <ol className="flex flex-col justify-center w-4/6" style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }) => {
                   itemType="http://schema.org/Article"
                 >
                   <header className="bg-red-500">
-                    <h2 className="text-xl">
+                    <h2 className="text-xl ">
                       <Link to={post.fields.slug} itemProp="url">
                         <span itemProp="headline">{title}</span>
                       </Link>
@@ -62,7 +62,7 @@ const BlogIndex = ({ data, location }) => {
             )
           })}
         </ol>
-      </div>
+      </div> */}
     </Layout>
   )
 }

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `xeonnux.dev`,
+    title: `fmadre.com`,
     author: {
       name: `Fabrice Madré`,
       summary: `Certified Full Stack Web Developer since September 2021.
@@ -133,5 +133,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    "gatsby-plugin-mdx",
   ],
 }

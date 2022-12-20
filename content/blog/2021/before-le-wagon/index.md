@@ -6,7 +6,8 @@ description: "How it all Started"
 
 What an Incredible adventure Start!
 
-I started off in the beginning all out of curiosity... 
+I had started back in 1995 discovering code in secondary school. While this could be awkward for people nowadays,
+for me it is just
 
 
 ([Wikipedia Link](https://en.wikipedia.org/wiki/Salted_duck_egg))
