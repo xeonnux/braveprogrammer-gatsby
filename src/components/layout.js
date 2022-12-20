@@ -26,10 +26,10 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer class="flex flex-col items-center justify-center">
         <div class="flex justify-center align-middle">
-          © Fabrice Madré {new Date().getFullYear()}, Built with{` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          © Fabrice Madré {new Date().getFullYear()}, Built with
+          <a href="https://www.gatsbyjs.com" className="mx-1">Gatsby</a>
         </div>
-        <a href="mailto:fabrice@braveprogrammer.tech">contact: Fabrice</a>
+        <a href="mailto:stepwiseltd@gmail.com">contact: Fabrice</a>
       </footer>
     </div>
   )
